@@ -62,9 +62,9 @@ def get_consonant(h):
     return index_by_hash("bcdfghjklmnpqrstvwx", h)
 
 def get_syllable(h):
-    (c, h2) = get_consonant(h)
-    (v, h3) = get_vowel(h2)
-    return c + v, h3
+    (c, h) = get_consonant(h)
+    (v, h) = get_vowel(h)
+    return c + v, h
 
 def generate_password(h):
     pw = ""
